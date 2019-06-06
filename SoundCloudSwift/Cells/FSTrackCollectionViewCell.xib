@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TheCell" id="gTV-IL-0wX" customClass="FSTrackCollectionViewCell" customModule="SoundCloudSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="498" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="498" height="73"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tea-d3-Z2Z">
+                        <rect key="frame" x="7" y="6" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="g6S-s8-y0J"/>
+                            <constraint firstAttribute="width" constant="60" id="hih-kx-wcE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-wf-6wW">
+                        <rect key="frame" x="89" y="13" width="389" height="46"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oBE-wf-6wW" firstAttribute="centerY" secondItem="Tea-d3-Z2Z" secondAttribute="centerY" id="Ftn-zC-2Dh"/>
+                <constraint firstItem="oBE-wf-6wW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="GbC-b3-G9d"/>
+                <constraint firstItem="Tea-d3-Z2Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="UAE-5d-7C7"/>
+                <constraint firstItem="Tea-d3-Z2Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7" id="Wqu-K4-RKc"/>
+                <constraint firstAttribute="trailing" secondItem="oBE-wf-6wW" secondAttribute="trailing" constant="20" id="ZPJ-Xn-vo8"/>
+                <constraint firstItem="oBE-wf-6wW" firstAttribute="leading" secondItem="Tea-d3-Z2Z" secondAttribute="trailing" constant="22" id="cZV-sP-ya5"/>
+                <constraint firstAttribute="bottom" secondItem="Tea-d3-Z2Z" secondAttribute="bottom" constant="7" id="s57-RS-foh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="498" height="73"/>
+            <connections>
+                <outlet property="ivPoster" destination="Tea-d3-Z2Z" id="Wqg-1h-kY1"/>
+                <outlet property="lblTitle" destination="oBE-wf-6wW" id="6Vi-cd-ufp"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="161.04910714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
